@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 // import App from "./App";
-import App from "./NewComponent";
+// import App from "./NewComponent";
+import TodoList from "./TodoList";
+
 // 自定义组件名首字母大写
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<TodoList />, document.getElementById("root"));
