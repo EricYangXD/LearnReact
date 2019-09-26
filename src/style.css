@@ -1,0 +1,82 @@
+.input {
+	border: 1px solid #ae7000;
+	border-radius: 3px;
+}
+
+button {
+	border: 1px solid #dedfde;
+	margin-left: 20px;
+	border-radius: 5px;
+	background-color: blue;
+	color: #dedfde;
+	cursor: pointer;
+}
+
+.show {
+	/* opacity: 1;
+    transition: all 1s ease-in; */
+	animation: show-boss 0.5s ease-in;
+}
+.hide {
+	/* opacity: 0;
+    transition: all 1.5s ease-out; */
+	animation: hide-boss 1s ease-out forwards;
+}
+
+@keyframes show-boss {
+	0% {
+		opacity: 0;
+		color: yellowgreen;
+	}
+	30% {
+		opacity: 0.5;
+		color: yellow;
+	}
+	60% {
+		opacity: 0.8;
+		color: orange;
+	}
+	100% {
+		opacity: 1;
+		color: red;
+	}
+}
+@keyframes hide-boss {
+	0% {
+		opacity: 1;
+		color: red;
+	}
+	30% {
+		opacity: 0.8;
+		color: orange;
+	}
+	60% {
+		opacity: 0.5;
+		color: yellow;
+	}
+	100% {
+		opacity: 0;
+		color: yellowgreen;
+	}
+}
+
+.boss-text-enter {
+	opacity: 0;
+}
+.boss-text-active {
+	opacity: 1;
+	transition: opacity 0.8s;
+}
+.boss-text-done {
+	opacity: 1;
+}
+.boss-text-exit {
+	opacity: 1;
+}
+.boss-text-exit-active {
+	opacity: 0;
+	transition: opacity 0.8s;
+}
+.boss-text-exit-done {
+	opacity: 0;
+}
