@@ -17,6 +17,7 @@ class TodoList extends Component {
 	constructor(props) {
 		super(props);
 		// console.log(store.getState());
+		// 使用store
 		this.state = store.getState();
 		this.changeInputValue = this.changeInputValue.bind(this);
 		this.clickBtn = this.clickBtn.bind(this);
