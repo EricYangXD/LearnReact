@@ -100,7 +100,6 @@ const dispatchToProps = dispatch => {
 				type: "remove_item",
 				index
 			};
-			console.log(index);
 			dispatch(action);
 		}
 	};
