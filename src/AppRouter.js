@@ -7,27 +7,47 @@ import Workplace from "./pages/Workplace";
 import "./style.css";
 
 function AppRouter() {
+	const dynamicRouter = [
+		{ path: "/", component: Index, exact: true, title: "博客首页" },
+		{
+			path: "/video/",
+			component: Video,
+			exact: false,
+			title: "视频教程"
+		},
+		{
+			path: "/workplace/",
+			component: Workplace,
+			exact: false,
+			title: "职场技能"
+		}
+	];
 	return (
 		<Router>
 			<div className="mainDiv">
 				<div className="leftNav">
 					<h3>一级导航</h3>
 					<ul>
-						<li>
-							<Link to="/">博客首页</Link>
-						</li>
-						<li>
-							<Link to="/video">视频教程</Link>
-						</li>
-						<li>
-							<Link to="/workplace">职场技能</Link>
-						</li>
+						{dynamicRouter.map((item, index) => {
+							return (
+								<li key={index}>
+									<Link to={item.path}>{item.title}</Link>
+								</li>
+							);
+						})}
 					</ul>
 				</div>
 				<div className="rightMain">
-					<Route path="/" exact component={Index}></Route>
-					<Route path="/video/" component={Video}></Route>
-					<Route path="/workplace/" component={Workplace}></Route>
+					{dynamicRouter.map((item, index) => {
+						return (
+							<Route
+								key={index}
+								path={item.path}
+								component={item.component}
+								exact={item.exact}
+							></Route>
+						);
+					})}
 				</div>
 			</div>
 		</Router>
