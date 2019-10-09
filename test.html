@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<style>
+			#trapezoid {
+				border-bottom: 100px solid red;
+				border-left: 25px solid transparent;
+				border-right: 25px solid transparent;
+				height: 0;
+				width: 100px;
+			}
+			.test {
+				width: 100px;
+				height: 100px;
+				background-color: green;
+				margin-top: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="trapezoid"></div>
+		<div name="test" class="test"></div>
+	</body>
+	<script>
+		var trapezoid = document.getElementById("trapezoid");
+
+		trapezoid.onclick = function() {
+			console.log("trapezoid clicked");
+		};
+		var test = document.querySelectorAll(".test")[0];
+
+		test.onclick = function() {
+			console.log("test clicked");
+		};
+	</script>
+</html>
