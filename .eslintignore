@@ -1,0 +1,11 @@
+node_modules
+**/node_modules
+**/config
+**/mock
+**/server
+app.config.js
+webpack.config.js
+**/lib
+**/build
+**/static
+**/packages

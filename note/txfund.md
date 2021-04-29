@@ -51,3 +51,11 @@ React->Vue2.6
 
 feature/am-united-org-web 现场机构端代码
 feature/am_united_web 现场内部端代码
+
+### Note
+
+这个UItemplate里用了vue-property-decorator、vue-class-component这2个插件
+
+如果后续开发需要沿用这种写法--[基于类的 API] 的话，需要提前熟悉适应这种写法
+
+否则，还是建议使用原生的写法

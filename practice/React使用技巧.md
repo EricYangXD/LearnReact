@@ -31,8 +31,6 @@ async test(){
 this.setState(state => ({
   isClicked: !state.chosen,
 }));
-
-
 ```
 
 2. 当依赖的某个值发生变化时自动触发执行
@@ -47,9 +45,8 @@ this.setState(state => ({
       );
     }
   }
-
 ```
 
-3. this.setState()自动回合并执行，所以不必刻意把多个操作写在一起。
+3. this.setState()会自动合并执行，所以不必刻意把多个操作写在一起。所以会出现异步。
 
 4.
