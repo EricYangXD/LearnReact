@@ -23,6 +23,6 @@
   },
   "include": [
     "src",
-    "note/Demo.js"
+    "practice/Demo.js"
   ]
 }
