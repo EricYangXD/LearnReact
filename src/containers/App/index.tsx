@@ -1,9 +1,10 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import moment from 'moment';
-import AppRouter from '../../router';
-import './App.css';
+import renderRoutes from '../../router';
+import { routes } from '../../router/routes';
 import HeaderMenu from '../Header/HeaderMenu';
+import './App.css';
 import GlobalStyle, { theme } from './GlobalStyle';
 import { AppStyled, Content } from './styles';
 
@@ -15,9 +16,7 @@ function App(): JSX.Element {
       <AppStyled>
         <GlobalStyle />
         <HeaderMenu />
-        <Content>
-          <AppRouter />
-        </Content>
+        <Content>{renderRoutes(routes)}</Content>
       </AppStyled>
     </ThemeProvider>
   );
