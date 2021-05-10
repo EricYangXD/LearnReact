@@ -8,9 +8,9 @@ import App from './containers/App';
 
 /* 配置message提示 */
 message.config({
-  top: 50,
+  top: 100,
   duration: 2,
-  maxCount: 3,
+  maxCount: 1,
 });
 
 ReactDOM.render(

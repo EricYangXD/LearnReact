@@ -5,7 +5,7 @@ const Sell = lazy(() => import('pages/sell'));
 const Home = lazy(() => import('pages/home'));
 const MockLogin = lazy(() => import('pages/login/MockLogin'));
 
-export const BasePath = '/shopify';
+export const BasePath = '';
 
 export const getPath = (p) => `${BasePath}${p}`;
 
