@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+- WIKI
+
+1. [Home](./wiki)
+2. [Promise.js](./wiki/Promise.js)
+
 ## Available Scripts
 
 In the project directory, you can run:
