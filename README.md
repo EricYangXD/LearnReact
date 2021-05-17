@@ -2,8 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - WIKI
 
-1. [Home](./wiki)
-2. [Promise.js](./wiki/Promise.js)
+1. [Home](/LearnReact/wiki)
+2. [Promise.js](/LearnReact/wiki/Promise.js)
 
 ## Available Scripts
 
