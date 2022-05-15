@@ -1,5 +1,3 @@
-/** Copyright © 2013-2021 DataYes, All Rights Reserved. */
-
 import React, { useEffect, useState } from 'react';
 import _ from 'lodash';
 import { Button, FormInstance, message, Upload } from 'antd';
